@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Principal" content="Práctica 2 HTML">
+  <meta name="description" content="SUPERMERCADOS DIW">
+  <title>CONTACTO</title>
+
+<style>
+    .contenedor{
+        margin:auto;
+        text-align: center;
+    }
+</style>  
+</head>
+
+<body>
+<div class="contenedor">
+    <h1>FORMULARIO DE CONTACTO</h1>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" maxlength="40" placeholder="Escribe tu nonbre" pattern="[A-Za-z-0-9\s]+" autofocus required> <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="ejemplo@correo.com" required> <br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" placeholder="Tu edad" min="18" max="99" required> <br><br>
+
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 600123456" pattern="[0-9]{9}" required> <br><br>
+
+        <label for="consulta">Consulta:</label>
+        <textarea id="consulta" name="consulta" rows="4" cols="40" placeholder="Escribe tu consulta aquí..." required></textarea> <br><br>
+
+        <label>
+        <input type="checkbox" required>
+        Acepto la política de privacidad y cookies
+        </label> <br>
+
+        <button type="submit">Enviar</button> <br><br>
+    </form>
+    
+    <section class="contacto-info">
+        <h2>Datos de Contacto</h2>
+        <p>Puedes llamarnos al siguiente número:</p>
+        <p><a href="tel:+34960000123"> 960 000 123</a></p>
+    </section>
+
+    <a href="index.html">Volver a la página de inicio</a>
+
+</div>   
+</body>
+</html>

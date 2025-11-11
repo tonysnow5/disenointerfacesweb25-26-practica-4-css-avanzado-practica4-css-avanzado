@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Principal" content="Práctica 2 HTML">
+  <meta name="description" content="SUPERMERCADOS DIW">
+  <title>SERVICIOS</title>
+
+  
+  <style> 
+
+    .contenedor{         
+      margin:auto;
+      text-align: center;     
+    }
+
+    tbody tr:nth-child(odd){
+      background-color:#809eff;
+    }
+
+    tbody tr:nth-child(even){
+    background-color: #ff6f6f; 
+    }
+
+    table tr:first-child{
+    background-color: #c3ecd9;
+    font-weight: bold;
+    }
+
+    .tabla{
+      caption-side: bottom;
+      table-layout: auto; 
+      width: 100%;
+      border-collapse:collapse;      
+      text-align: center;
+      margin: 60px 0;      
+    }
+
+    .tabla td, th{
+      border:1px solid black;
+    }
+  </style>
+</head>
+<body>
+<div class="contenedor">
+    <h1>SERVICIOS</h1>
+    
+    <table class="tabla">
+    <caption>Listado de Servicios</caption>
+    <thead>
+      <tr>
+        <th>Servicio</th>
+        <th>Descripción</th>
+        <th>Duración</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Limpieza de oficinas</td>
+        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+        <td>Mensual</td>
+        <td>80 €</td>
+      </tr>
+      <tr>
+        <td>Mantenimiento general</td>
+        <td>Nulla facilisi. Proin sed justo in sapien aliquam porta.</td>
+        <td>Trimestral</td>
+        <td>120 €</td>
+      </tr>
+      <tr>
+        <td>Desinfección de espacios</td>
+        <td>Vestibulum eu tortor eget elit iaculis commodo.</td>
+        <td>Semanal</td>
+        <td>60 €</td>
+      </tr>
+      <tr>
+        <td>Limpieza de cristales</td>
+        <td>Morbi finibus elit vel eros efficitur, vel dignissim lorem congue.</td>
+        <td>Quincenal</td>
+        <td>50 €</td>
+      </tr>
+    </tbody>
+  </table>
+<br><br>
+
+  <a href="index.html">Volver a la página de inicio</a>
+</div>
+</body>
+</html>
