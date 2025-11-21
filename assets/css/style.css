@@ -8,6 +8,15 @@
     box-sizing: border-box;
 }
 
+img:not([alt]) {
+  border: 3px solid red;
+}
+
+a[href$=".pdf"]::after {
+  content: url("https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png");
+  margin-left: 5px;  
+}
+
 #contenedor{
   display: flex;
   flex-direction: column;
@@ -97,9 +106,14 @@ main{
   padding: 10px;
 }
 
-main .ventajas{
+main .tituloventajas{
   font-size: 50px;
   text-shadow: 0px 0px 20px yellow;
+}
+
+.zona1 img{    
+  width: 50px;
+  height: 50px;
 }
 
 .caja{
@@ -113,6 +127,7 @@ main .ventajas{
   border-radius: 20px;
   box-shadow: 0px 5px 14px #103523;
   text-align: center;
+  align-items: center;
 }
 
 .caja h3{
@@ -171,7 +186,7 @@ section h2{
   font-size: 18px;
   color: #22744C;
   display: inline-block;
-  transition: 0.3s;
+  transition: 0.6s;
   border-radius: 50px;
   padding:20px;
   box-shadow: 0px 5px 14px #103523;
@@ -182,6 +197,14 @@ section h2{
   color: rgb(64, 184, 17);
   border-radius: 50px;
   padding: 20px;
+}
+.manuales a{
+  display: block;      
+  text-align: center; 
+  margin: 20px 0;     
+  text-decoration: none;
+  color:yellow;
+  text-shadow:0px 0px 8px #103523;
 }
 
 /*## FOOTER ##*/
@@ -206,24 +229,28 @@ footer h3, footer h4 {
 
 #whatsapp:hover {
   background-color: #a1ffb1;
+  transition: 0.8s;
   transform: scale(1.1);
   padding:10px;
 }
 
 #facee:hover {
   background-color: #a1b7ff;
+  transition: 0.8s;
   transform: scale(1.1);
   padding:10px;
 }
 
 #insta:hover {
   background-color: #fca1ff;
+  transition: 0.8s;
   transform: scale(1.1);
   padding:10px;
 }
 
 #x:hover {
   background-color: #919191;
+  transition: 0.8s;
   transform: scale(1.1);
   padding:10px;
 }
@@ -242,6 +269,7 @@ footer h3, footer h4 {
 
 .iconowhatsapp img:hover{
   background-color: #a1ffb1;
+  transition: 0.8s;
   transform: scale(1.1);
   padding:10px;
   border-radius: 50%;
